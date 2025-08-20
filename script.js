@@ -71,6 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    history.replaceState(null, null, "#home"); // optional
-  }, 50); // small delay to ensure DOM is ready
+    history.replaceState(null, null, window.location.pathname); // removes hash
+  }, 50);
 });
